@@ -29,8 +29,8 @@ $ns attach-agent $n0 $udp0
 
 
 set cbr0 [new Application/Traffic/CBR]
-$cbr0 set packet-size 500
-$cbr0 set interval 0.005
+$cbr0 set packetSize_ 500
+$cbr0 set interval_ 0.005
 $cbr0 attach-agent $udp0
 
 set udp1 [new Agent/UDP]
